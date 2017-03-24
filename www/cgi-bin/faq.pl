@@ -28,7 +28,7 @@ my $db           = "EWC_FAQ";                                                   
 
 my $dbh = db::new $db;
 
-my $faq_hash = build_faq_hash ($dbh);               # bulid the hash from Q&A values from database
+my $faq_hash = build_faq_hash ($dbh);               # build the hash from Q&A values from database
 my $faq_content = faq_hash_to_content ($faq_hash);  # convert the hash with values to HTML code 
 my $html_header = get_page_header();                # get HTML header from some templates
 
